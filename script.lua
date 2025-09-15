@@ -12,8 +12,30 @@ local Stats = game:GetService("Stats")
 local lp = Players.LocalPlayer
 local PlayerGui = lp:WaitForChild("PlayerGui")
 
--- Load Rayfield
-local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+-- Load Rayfield with error handling
+local Rayfield
+local success, err = pcall(function()
+    Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+end)
+
+if not success then
+    warn("Failed to load Rayfield: " .. tostring(err))
+    -- Try alternative URL
+    success, err = pcall(function()
+        Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Rayfield/main/source"))()
+    end)
+    
+    if not success then
+        warn("Failed to load Rayfield from alternative URL: " .. tostring(err))
+        -- Create a simple notification
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "Ultimate Forsaken Hub";
+            Text = "Failed to load Rayfield UI library";
+            Duration = 5;
+        })
+        return
+    end
+end
 
 -- Create Main Window
 local Window = Rayfield:CreateWindow({
