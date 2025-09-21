@@ -27,14 +27,14 @@ Discord = {Enabled = false},
 KeySystem = false
 })
 
--- FIXED: Shortened tab names to prevent cutoff
-local AutoBlockTab = Window:CreateTab("Auto", 4483362458)
-local BDTab = Window:CreateTab("Better Det", 4483362458)
-local PredictiveTab = Window:CreateTab("Predict", 4483362458)
-local FakeBlockTab = Window:CreateTab("Fake", 4483362458)
-local AutoPunchTab = Window:CreateTab("Punch", 4483362458)
-local CustomAnimationsTab = Window:CreateTab("Anim", 4483362458)
-local MiscTab = Window:CreateTab("Misc", 4483362458)
+-- FIXED: Single letter tab names to prevent cutoff
+local AutoBlockTab = Window:CreateTab("A", 4483362458)
+local BDTab = Window:CreateTab("B", 4483362458)
+local PredictiveTab = Window:CreateTab("P", 4483362458)
+local FakeBlockTab = Window:CreateTab("F", 4483362458)
+local AutoPunchTab = Window:CreateTab("Q", 4483362458)
+local CustomAnimationsTab = Window:CreateTab("C", 4483362458)
+local MiscTab = Window:CreateTab("M", 4483362458)
 
 
 
