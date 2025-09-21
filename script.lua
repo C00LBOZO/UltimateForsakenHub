@@ -1,9 +1,10 @@
 -- Auto Block OrionLib Script (Converted from Rayfield)
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({
     Name = "Auto Block Hub", 
     HidePremium = false, 
     SaveConfig = true, 
+    IntroEnabled = false,
     ConfigFolder = "AutoBlockHub"
 })
 
