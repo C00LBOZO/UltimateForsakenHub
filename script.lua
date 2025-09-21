@@ -28,12 +28,12 @@ KeySystem = false
 })
 
 -- FIXED: Shortened tab names to prevent cutoff
-local AutoBlockTab = Window:CreateTab("Auto Block", 4483362458)
+local AutoBlockTab = Window:CreateTab("Auto", 4483362458)
 local BDTab = Window:CreateTab("Better Det", 4483362458)
-local PredictiveTab = Window:CreateTab("Predictive", 4483362458)
-local FakeBlockTab = Window:CreateTab("Fake Block", 4483362458)
-local AutoPunchTab = Window:CreateTab("Auto Punch", 4483362458)
-local CustomAnimationsTab = Window:CreateTab("Animations", 4483362458)
+local PredictiveTab = Window:CreateTab("Predict", 4483362458)
+local FakeBlockTab = Window:CreateTab("Fake", 4483362458)
+local AutoPunchTab = Window:CreateTab("Punch", 4483362458)
+local CustomAnimationsTab = Window:CreateTab("Anim", 4483362458)
 local MiscTab = Window:CreateTab("Misc", 4483362458)
 
 
